@@ -14,7 +14,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: example-helloserver:qgr
+      tag: qinguangrui1/example-helloserver:latest
       pushRemote: true
       registry: index.docker.io
 - name: Deploy
