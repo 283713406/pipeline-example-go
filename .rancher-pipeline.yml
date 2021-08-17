@@ -21,4 +21,9 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
-notification: {}
+notification:
+  recipients:
+  - recipient: qinguangrui@kylinos.cn
+    notifier: local:n-cpbv5
+  condition:
+  - Success
